@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/to-do/static/css/main.b6118809.chunk.css",
+    "main.js": "/to-do/static/js/main.504cfe66.chunk.js",
+    "main.js.map": "/to-do/static/js/main.504cfe66.chunk.js.map",
+    "runtime~main.js": "/to-do/static/js/runtime~main.2bc456c2.js",
+    "runtime~main.js.map": "/to-do/static/js/runtime~main.2bc456c2.js.map",
+    "static/js/2.5f6b880c.chunk.js": "/to-do/static/js/2.5f6b880c.chunk.js",
+    "static/js/2.5f6b880c.chunk.js.map": "/to-do/static/js/2.5f6b880c.chunk.js.map",
+    "index.html": "/to-do/index.html",
+    "precache-manifest.984c2b5ccb613d3465a6a95acef8bc16.js": "/to-do/precache-manifest.984c2b5ccb613d3465a6a95acef8bc16.js",
+    "service-worker.js": "/to-do/service-worker.js",
+    "static/css/main.b6118809.chunk.css.map": "/to-do/static/css/main.b6118809.chunk.css.map",
+    "static/media/_App.scss": "/to-do/static/media/nyc.f4685872.jpg"
+  }
+}
