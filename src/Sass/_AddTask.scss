@@ -1,0 +1,124 @@
+@import 'variables','mixins-mediaq';
+
+.addtask{
+  width:92%;
+  margin: .6em auto;
+  @include mediaq(m){
+    margin: 1.5em auto;
+  }
+  & .addtask-txt{
+    @include addtask;
+    &__input{
+      @include inputs;
+      flex-basis:280px;
+      margin-right: .2em;
+      font-size:1rem;
+      color: white;
+      @include mediaq(m){
+        flex-basis: 40%;
+        margin-right: .4em;
+        height: 1.8em;
+        font-size:1.1rem;
+      }
+      @include mediaq(xl){
+        flex-basis: 30%;
+        margin-right: .4em;
+        height: 2em;
+      }
+      @include mediaq(xxl){
+        flex-basis: 25%;
+        margin-right: .4em;
+        height: 2em;
+      }
+    }
+    &__checkbox{
+      margin:.3em 0 0 .2em;
+    }
+    &__label{
+      margin:0 .8em 0 .2em;
+      font-size:.8rem;
+      color:$font-primary-color;
+      cursor: pointer;
+      transition: .4s;
+      @include mediaq(m){
+        margin-left: .2em;
+        font-size:1rem;
+      }
+      @include mediaq(xxl){
+        letter-spacing: .5px;
+      }
+    }
+    &__label:hover{
+      @include mediaq(xl){
+        color:$buttons-color;
+      }
+    }
+  }
+  & .addtask-date{
+    @include addtask;
+    margin-top: -1em;
+    &__label{
+      margin:0 .3em 0 -.7em;
+      @include mediaq(xs){
+        margin-left: -.2em;
+      }
+      @include mediaq(s){
+        margin-left: .7em;
+      }
+      @include mediaq(m){
+        margin-left: -1.5em;
+        font-size:1.1rem;
+      }
+      @include mediaq(l){
+        margin-left: 3.5em;
+      }
+      @include mediaq(xl){
+        margin-left: .7em;
+        font-size:1.1rem;
+      }
+      @include mediaq(xxl){
+        margin-left: -1.5em;
+        letter-spacing: .5px;
+      }
+      @include mediaq(xxxl){
+        margin-left:2.6em;
+      }
+    }
+    &__input{
+      @include inputs;
+      color: $font-primary-color;
+      margin-right: 1.3em;
+      text-align: right;
+      @include mediaq(m){
+        height: 1.8em;
+        font-size:.9rem;
+      }
+      @include mediaq(xl){
+        height: 2em;
+        margin-right: 1em;
+        font-size:1rem;
+      }
+    }
+    &__btn{
+      @include buttons;
+      margin-right: .3em;
+      font-size: 3rem;
+      color:$buttons-color;
+      outline:transparent;
+      @include mediaq(xs){
+        margin-right: -.2em;
+      }
+      @include mediaq(m){
+        margin-right: -.5em;
+      }
+    }
+  }
+}
+::placeholder{
+  text-align: center;
+  color:rgba($font-primary-color,.8);
+}
+
+
+
+

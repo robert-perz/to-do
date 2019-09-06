@@ -1,0 +1,42 @@
+@import 'variables','mixins-mediaq';
+.tasks-list-container{
+  @include mediaq(m){
+    width:80%;
+    margin: 0 auto;
+  }
+  @include mediaq(xl){
+    width:72%;
+    margin: 0 auto;
+  }
+  & .active{
+    &__title,&__title-conditional{
+      letter-spacing: .7px;
+      @include mediaq(xxs){
+        margin-bottom: .4em;
+        font-size: 1.1rem;
+      }
+      @include mediaq(xs){
+        margin-bottom: .4em;
+        font-size: 1.1rem;
+      }
+      @include mediaq(m){
+        margin-bottom: .5em;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  & .done{
+    margin-top: 2em;
+    &__title{
+      letter-spacing: .7px;
+      @include mediaq(xxs){
+        margin:.2em 0 .4em 0;
+        font-size: 1.1rem;
+      }
+      @include mediaq(m){
+        margin: .5em 0 .5em;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

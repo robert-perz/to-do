@@ -1,0 +1,30 @@
+@import 'variables','mixins-mediaq';
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:$main-font; 
+}
+body{
+  min-height: 100vh;
+  background: #666 url(../img/nyc.jpg) no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  text-align: center;
+  color:$font-primary-color;
+}
+.app-title{
+  font-size: 2rem;
+  color:$buttons-color;
+  @include mediaq(m){
+    font-size: 2.5rem;
+  }
+  @include mediaq(xl){
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+  }
+  @include mediaq(xl){
+    font-size: 4rem;
+  }
+}
